@@ -232,6 +232,7 @@ function perf(raw) {
   }
 }
 function loop() {
+  if (!path) { resize(); if (!path) { requestAnimationFrame(loop); return; } } // viewport was 0x0 at boot (hidden tab, prerender): wait for a real size
   const raw = clock.getDelta(), dt = Math.min(raw, 0.05), t = clock.elapsedTime; frame++;
   perf(raw);
   prog += (target - prog) * (1 - Math.exp(-dt * 3.6)); if (Math.abs(target - prog) < 1e-5) prog = target;
