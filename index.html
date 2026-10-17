@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Akshat Pal - After Dark</title>
+<meta name="description" content="Portfolio of Akshat Pal, software engineer. Step into the room." />
+<link rel="preload" href="fonts/geist-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/jetbrains-mono-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="fonts/fonts.css">
+<link rel="stylesheet" href="css/style.css">
+<script type="importmap">
+{"imports":{
+  "three":"https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+  "three/addons/":"https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+}}
+</script>
+</head>
+<body>
+<div id="loader"><div class="ld"><b>akshat.os</b>powering on the room<div class="bar"><i></i></div></div></div>
+
+<canvas id="scene" aria-hidden="true"></canvas>
+
+<header class="hud">
+  <div class="brand"><span class="mono-mark">AP</span><span>Akshat Pal</span></div>
+</header>
+
+<section class="hero" id="hero">
+  <h1>Akshat Pal<span class="sub">builds things <em>after dark.</em></span></h1>
+  <p class="lede">Software engineer building fast interfaces, solid systems and the occasional late-night side project.</p>
+</section>
+
+<nav class="chapters" id="chapters">
+  <button data-at="0"><span>Room</span><i></i></button>
+  <button data-at="0.2"><span>Setup</span><i></i></button>
+  <button data-f="0.5"><span>About</span><i></i></button>
+  <button data-f="1.5"><span>Experience</span><i></i></button>
+  <button data-f="2.5"><span>Projects</span><i></i></button>
+  <button data-f="3.5"><span>Stack</span><i></i></button>
+  <button data-f="4.5"><span>Contact</span><i></i></button>
+</nav>
+
+
+<!-- inside the PC: one panel per chapter; js/showcase.js renders the hero objects + cyberpunk backdrop -->
+<main class="deck" id="deck" aria-label="Portfolio">
+  <section class="slide" id="about">
+    <h2 class="sl-t" data-g="I build software that feels fast.">I build software that feels <em>fast</em>.</h2>
+    <p class="p">I'm Akshat, a software engineer who cares about the whole stack, from the data model to the last pixel of a hover state. I like problems where performance, product sense and craft all have to show up at once.</p>
+    <p class="p">Off the clock: deep in a PS5 campaign, hunting a pair I definitely don't need, or re-watching Spider-Verse frame by frame.</p>
+    <dl class="facts">
+      <div><dt>Based in</dt><dd>India</dd></div>
+      <div><dt>Currently</dt><dd>Software Engineer at Prosperr</dd></div>
+      <div><dt>Focus</dt><dd>Product engineering, web, 3D</dd></div>
+    </dl>
+  </section>
+  <section class="slide" id="work">
+    <h2 class="sl-t" data-g="Where I've shipped.">Where I've <em>shipped</em>.</h2>
+    <div class="rows">
+      <div class="row"><span class="yr">2024 - now</span><div><h4>Software Engineer <span>Prosperr</span></h4><p>Placeholder: what you own, what you shipped, and one number that proves it mattered.</p></div><span class="tag now">current</span></div>
+      <div class="row"><span class="yr">2023 - 2024</span><div><h4>Previous role <span>Company</span></h4><p>Placeholder: the systems you built and the problems you untangled.</p></div><span class="tag">full-time</span></div>
+      <div class="row"><span class="yr">2022</span><div><h4>Intern <span>Company</span></h4><p>Placeholder: where it started.</p></div><span class="tag">internship</span></div>
+    </div>
+  </section>
+  <section class="slide" id="projects">
+    <h2 class="sl-t" data-g="Things I've built.">Things I've <em>built</em>.</h2>
+    <div class="plist">
+      <article class="pj"><h5>akshat.os <small>2026</small></h5><p>A scroll-driven 3D portfolio. You're inside it.</p><div class="st">three.js, glsl, webgl</div></article>
+      <article class="pj"><h5>DROP/LIST <small>sample</small></h5><p>Release calendar + resale alerts for the rotation.</p><div class="st">next.js, cron, webhooks</div></article>
+      <article class="pj"><h5>TROPHY.DB <small>sample</small></h5><p>PSN stats, platinum timelines and backlog math.</p><div class="st">react, d3, api</div></article>
+      <article class="pj"><h5>Project two <small>sample</small></h5><p>One line on the problem, one on the result.</p><div class="st">typescript, node, postgres</div></article>
+    </div>
+  </section>
+  <section class="slide" id="stack">
+    <h2 class="sl-t" data-g="What runs the build.">What runs the <em>build</em>.</h2>
+    <dl>
+      <div class="stack-g"><dt>Languages</dt><dd class="chips"><span class="chip hot">TypeScript</span><span class="chip">JavaScript</span><span class="chip">Python</span><span class="chip">SQL</span></dd></div>
+      <div class="stack-g"><dt>Frontend</dt><dd class="chips"><span class="chip hot">React</span><span class="chip">Next.js</span><span class="chip hot">Three.js</span><span class="chip">Tailwind</span></dd></div>
+      <div class="stack-g"><dt>Backend</dt><dd class="chips"><span class="chip">Node.js</span><span class="chip">PostgreSQL</span><span class="chip">Redis</span><span class="chip">REST / GraphQL</span></dd></div>
+      <div class="stack-g"><dt>Infra</dt><dd class="chips"><span class="chip">AWS</span><span class="chip">Docker</span><span class="chip">Firebase</span><span class="chip">CI/CD</span></dd></div>
+    </dl>
+  </section>
+  <section class="slide" id="contact">
+    <h2 class="sl-t huge" data-g="Let's build something after dark.">Let's build something <em>after dark.</em></h2>
+    <div class="links"><a class="pri mag" href="#">Email <svg class="arr" viewBox="0 0 16 16" aria-hidden="true"><path d="M5 11 11 5M6 5h5v5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a><a class="mag" href="#">GitHub <svg class="arr" viewBox="0 0 16 16" aria-hidden="true"><path d="M5 11 11 5M6 5h5v5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a><a class="mag" href="#">LinkedIn <svg class="arr" viewBox="0 0 16 16" aria-hidden="true"><path d="M5 11 11 5M6 5h5v5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a><a class="mag" href="#">Résumé <svg class="arr" viewBox="0 0 16 16" aria-hidden="true"><path d="M5 11 11 5M6 5h5v5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+    <div class="foot"><span>© 2026 Akshat Pal</span><span>Built with three.js</span></div>
+  </section>
+  <nav class="deck-nav" id="deckNav" aria-label="Chapters">
+    <button>About</button><button>Experience</button><button>Projects</button><button>Stack</button><button>Contact</button>
+  </nav>
+</main>
+
+<div class="spacer"></div>
+<script type="module" src="js/main.js"></script>
+<script type="module" src="js/ui.js"></script>
+</body>
+</html>
